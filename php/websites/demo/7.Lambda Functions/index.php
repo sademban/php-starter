@@ -27,7 +27,7 @@
                 'purchaseUrl' => 'https://example.com'
             ]
         ];
-        //#### this work asme as PHP array_funciton()
+        //#### this work same as PHP array_funciton()
 
         // function filter($items, $fn) {
         //     $filterItems = [];
