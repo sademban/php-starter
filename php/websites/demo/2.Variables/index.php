@@ -7,11 +7,14 @@
 <body>
     <h1>
         <?php
+        #1
+            echo "Hello," . " World!";
+        #2
             $greeting = "Hello";
 
             echo $greeting ." "."World!";
-
-            echo "$greeting World!";
+        #3
+            echo "$greeting World!"; # you cannot use single quotes to display variables value
         ?>
     </h1>
 </body>

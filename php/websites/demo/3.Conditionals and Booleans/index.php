@@ -27,11 +27,15 @@
 
 
         <h1>
-           <!-- <?php
-                echo $message;
-            ?> -->
-        
-            <?= $message; ?>
+           <?php
+           #1
+               // echo $message;
+            ?> 
+            
+            <?= 
+            #2
+            $message; 
+            ?>
         </h1>
 
 
