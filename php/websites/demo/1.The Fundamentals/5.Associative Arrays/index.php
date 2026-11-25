@@ -6,12 +6,12 @@
 </head>
 <body>
     <h1> Recommended Books</h1>
-    <?php 
+    <?php
         $books = [
             [
                 'name' => 'Do Android Drreams of Electric Sheep',
-                'author' => 'Philip K. DIck',
-                'purchaseUrl' => 'https://example.com' 
+                'author' => 'Philip K. Dick',
+                'purchaseUrl' => 'https://example.com'
             ],
             [
                 'name' => 'Project Hail',
@@ -27,9 +27,9 @@
             <a href="<?= $book['purchaseUrl'] ?>">
                 <?= $book['name']; ?>
            </a>
-           </li> 
-        <?php endforeach ?> 
+           </li>
+        <?php endforeach ?>
     </p>
-    
+
 </body>
 </html>

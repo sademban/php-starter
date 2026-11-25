@@ -6,23 +6,24 @@
 </head>
 <body>
     <h1> Recommended Books</h1>
-    <?php 
+    <?php
         $books = [
-            "Do Android Drreams of Electric Sheep", 
-            "The Langoliers", 
+            "Do Android Drreams of Electric Sheep",
+            "The Langoliers",
             "Hail Mary"
         ];
     ?>
 
     <ul>
-         <?php 
+         <?php
             // foreach ($books as $book) {
-            //     echo "<li>{$book}™️</li>";
+            //     echo "<li>" . $book . "™" . "</li>";
+            //     // echo "<li>{$book}™️</li>";
             // }
-        ?> 
+        ?>
         <br>
         <?php foreach ($books as $book): ?>
-            <li><?= $book ?>™️</li>
+            <li><?= $book ?>™</li>
         <?php endforeach; ?>
     </ul>
 </body>

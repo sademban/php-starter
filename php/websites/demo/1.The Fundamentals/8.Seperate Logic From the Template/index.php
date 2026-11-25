@@ -1,11 +1,11 @@
-<?php 
+<?php
 
 $books = [
     [
         'name' => 'Do Android Drreams of Electric Sheep',
         'author' => 'Philip K. Dick',
         'releaseYear' => 1986,
-        'purchaseUrl' => 'https://example.com' 
+        'purchaseUrl' => 'https://example.com'
     ],
     [
         'name' => 'Project Hail Mary',
@@ -22,8 +22,8 @@ $books = [
 ];
 
 
-$filteredBooks = array_filter($books, function ($books){
-    return $books['author'] === 'Andy Weir';
+$filteredBooks = array_filter($books, function ($book){
+    return $book['author'] === 'Andy Weir';
 });
 // var_dump($filteredBooks);
 

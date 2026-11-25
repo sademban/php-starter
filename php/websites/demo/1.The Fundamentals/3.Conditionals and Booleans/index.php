@@ -21,7 +21,7 @@
         if ($read) {
            $message = "You have read $name.";
         } else {
-            $message = "You have not read $name.";
+            $message = "You have NOT read $name.";
         }
     ?>
 
@@ -29,12 +29,12 @@
         <h1>
            <?php
            #1
-               // echo $message;
-            ?> 
-            
-            <?= 
+            //    echo $message;
+            ?>
+
+            <?=
             #2
-            $message; 
+            $message;
             ?>
         </h1>
 

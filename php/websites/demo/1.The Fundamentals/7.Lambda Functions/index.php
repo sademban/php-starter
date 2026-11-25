@@ -6,13 +6,13 @@
 </head>
 <body>
     <h1> Recommended Books</h1>
-    <?php 
+    <?php
         $books = [
             [
                 'name' => 'Do Android Drreams of Electric Sheep',
                 'author' => 'Philip K. Dick',
                 'releaseYear' => 1986,
-                'purchaseUrl' => 'https://example.com' 
+                'purchaseUrl' => 'https://example.com'
             ],
             [
                 'name' => 'Project Hail Mary',
@@ -29,27 +29,27 @@
         ];
         //#### this work same as PHP array_funciton()
 
-        // function filter($items, $fn) {
-        //     $filterItems = [];
+        function filter($items, $fn) {
+            $filterItems = [];
 
-        //     foreach ($items as $item) {
-        //         if($fn($item)) {
-        //             $filterItems[] = $item;
-        //         }
-        //     }
+            foreach ($items as $item) {
+                if($fn($item)) {
+                    $filterItems[] = $item;
+                }
+            }
 
-        //     return $filterItems;
-        // }
+            return $filterItems;
+        }
 
 
-        // $filteredBooks = filter($books, function ($books){
-        //     return $books['releaseYear'] < 2000;
-        // });   
-
-        $filteredBooks = array_filter($books, function ($books){
-            return $books['author'] === 'Andy Weir';
+        $filteredBooks = filter($books, function ($book){
+            return $book['releaseYear'] <= 2011;
         });
-        var_dump($filteredBooks);
+
+        // $filteredBooks = filter($books, function ($book){
+        //     return $book['releaseYear'] === 'Andy Weir';
+        // });
+        // var_dump($filteredBooks);
     ?>
 
     <p>
@@ -58,9 +58,9 @@
                     <a href="<?= $book['purchaseUrl'] ?>">
                         <?= $book['name']; ?> (<?= $book['releaseYear'] ?>) - By <?= $book['author']?>
                 </a>
-                </li> 
-        <?php endforeach; ?> 
+                </li>
+        <?php endforeach; ?>
     </p>
-    
+
 </body>
 </html>
