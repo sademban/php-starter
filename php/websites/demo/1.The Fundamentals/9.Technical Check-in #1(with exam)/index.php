@@ -21,12 +21,12 @@ $business['name']; // 'Laracasts'
 
 // foreach($business['categories'] as $category) {
 //     echo $category . "<br>";
-// }   
+// }
 
 
 function register($user){
-    //create theuser record in the db
-    //log the in
+    // create the user record in the db
+    // log them in
     // send a welcome email
     // redirect them to the dashboard
 }
